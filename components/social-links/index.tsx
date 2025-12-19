@@ -14,7 +14,7 @@ const SocialLinks = () => {
           <Image
             src={linkedinLogo}
             alt="LinkedIn"
-            className="max-w-full w-4.5"
+            className="w-4.5 max-w-full"
           />
         </a>
       </li>
@@ -24,7 +24,7 @@ const SocialLinks = () => {
           target="_blank"
           className="transition-all duration-200 ease-out md:hover:scale-110 md:hover:opacity-80"
         >
-          <Image src={githubLogo} alt="GitHub" className="max-w-full w-5" />
+          <Image src={githubLogo} alt="GitHub" className="w-5 max-w-full" />
         </a>
       </li>
     </ul>
