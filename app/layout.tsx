@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Rubik } from "next/font/google";
 import "./index.css";
+import Header from "@/components/header";
 
 const rubik = Rubik({
   variable: "--font-rubik",
@@ -22,7 +23,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ar" dir="rtl">
-      <body className={`${rubik.className} antialiased`}>{children}</body>
+      <body className={`${rubik.className} antialiased`}>
+        <Header />
+        <main className="mx-auto min-h-screen w-full max-w-4xl px-4">
+          {children}
+        </main>
+      </body>
     </html>
   );
 }

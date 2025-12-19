@@ -1,7 +1,8 @@
 export default function Home() {
-  return (
-    <div>
-      <h1 className="text-4xl text-center font-medium">زاد القارئ</h1>
-    </div>
-  );
+  return <div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quae possimus atque. A assumenda, molestias libero ullam repudiandae molestiae quis sint explicabo esse aliquid, labore nobis, magni repellendus quidem deleniti.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quae possimus atque. A assumenda, molestias libero ullam repudiandae molestiae quis sint explicabo esse aliquid, labore nobis, magni repellendus quidem deleniti.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quae possimus atque. A assumenda, molestias libero ullam repudiandae molestiae quis sint explicabo esse aliquid, labore nobis, magni repellendus quidem deleniti.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quae possimus atque. A assumenda, molestias libero ullam repudiandae molestiae quis sint explicabo esse aliquid, labore nobis, magni repellendus quidem deleniti.
+  </div>;
 }
