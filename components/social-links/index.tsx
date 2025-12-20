@@ -1,5 +1,3 @@
-import githubLogo from "@assets/github.png";
-import linkedinLogo from "@assets/linkedin.png";
 import Image from "next/image";
 
 const SocialLinks = () => {
@@ -9,12 +7,14 @@ const SocialLinks = () => {
         <a
           href="https://www.linkedin.com/in/gamal-hafez/"
           target="_blank"
+          rel="noopener noreferrer"
           className="transition-all duration-200 ease-out md:hover:scale-110 md:hover:opacity-80"
         >
           <Image
-            src={linkedinLogo}
+            width={20}
+            height={20}
+            src="/images/linkedin.png"
             alt="LinkedIn"
-            className="w-4.5 max-w-full"
           />
         </a>
       </li>
@@ -22,9 +22,10 @@ const SocialLinks = () => {
         <a
           href="https://github.com/GamalHafez?tab=repositories"
           target="_blank"
+          rel="noopener noreferrer"
           className="transition-all duration-200 ease-out md:hover:scale-110 md:hover:opacity-80"
         >
-          <Image src={githubLogo} alt="GitHub" className="w-5 max-w-full" />
+          <Image width={20} height={20} src="/images/github.png" alt="GitHub" />
         </a>
       </li>
     </ul>
