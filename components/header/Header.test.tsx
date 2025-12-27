@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import Header from "./index";
+import Header from "./Header";
 import { vi } from "vitest";
 
 // Mock SocialLinks
