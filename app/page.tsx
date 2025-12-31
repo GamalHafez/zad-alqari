@@ -1,9 +1,19 @@
+import BlogCard from "@components/blog-card";
 import SearchForm from "@components/search-form";
 
 export default function Home() {
   return (
     <>
       <SearchForm />
+      <section className="mt-3 mb-8 grid grid-cols-1 justify-items-center gap-x-8 gap-y-10 p-5 md:grid-cols-3 lg:grid-cols-3">
+        <BlogCard />
+        <BlogCard />
+        <BlogCard />
+        <BlogCard />
+        <BlogCard />
+        <BlogCard />
+        <BlogCard />
+      </section>
     </>
   );
 }
