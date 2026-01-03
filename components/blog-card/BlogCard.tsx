@@ -5,7 +5,7 @@ import { Book } from "@/data/books";
 
 const BlogCard = ({ book }: { book: Book }) => {
   const { title, description, author, category, cover } = book;
-  
+
   return (
     <Card className="group w-3xs cursor-pointer overflow-hidden border-0 shadow-lg transition-transform duration-300 hover:scale-[1.02] hover:shadow-xl">
       <Image
@@ -16,7 +16,7 @@ const BlogCard = ({ book }: { book: Book }) => {
         className="h-48 w-full rounded-xl object-cover px-2"
       />
 
-      <CardContent>
+      <CardContent className="flex-1">
         <Badge
           variant="outline"
           className="text-blue-700 transition-colors duration-300 group-hover:bg-blue-100 group-hover:text-blue-800"
@@ -27,7 +27,7 @@ const BlogCard = ({ book }: { book: Book }) => {
         <h3 className="mt-3 mb-1 text-lg leading-snug font-semibold transition duration-300 group-hover:text-blue-800">
           {title}
         </h3>
-        <p className="text-sm text-gray-500">{description}</p>
+        <p className="mt-1 text-sm text-gray-500">{description}</p>
       </CardContent>
 
       <CardFooter className="text-muted-foreground flex justify-between gap-1.5 text-sm">
