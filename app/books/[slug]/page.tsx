@@ -1,3 +1,4 @@
+import BookNavigation from "@/components/book-navigation/BookNavigation";
 import BookPurposes from "@/components/book-purposes";
 import { Badge } from "@/components/ui/badge";
 import { books } from "@/data/books";
@@ -56,6 +57,8 @@ const Page = async ({ params }: PageProps) => {
         height={400}
         className="mt-2 w-full rounded-lg"
       />
+
+      <BookNavigation slug={slug} />
     </div>
   );
 };
