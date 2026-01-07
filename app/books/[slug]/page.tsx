@@ -16,7 +16,8 @@ const Page = async ({ params }: PageProps) => {
   // TODO: Handle book not found
   if (!book) return <div>الكتاب غير موجود</div>;
 
-  const { title, description, author, category, cover, purposes } = book;
+  const { title, description, author, category, cover, purposes, infographic } =
+    book;
 
   return (
     <div className="mx-2 mt-3 mb-8 py-5 md:mx-24 lg:mx-32">
@@ -46,6 +47,15 @@ const Page = async ({ params }: PageProps) => {
       <p className="mt-1 text-gray-800">{description}</p>
 
       <BookPurposes purposes={purposes || []} />
+
+      <h3 className="mt-6 text-lg font-semibold">ملخّص بصري</h3>
+      <Image
+        src={infographic}
+        alt="Infographic"
+        width={600}
+        height={400}
+        className="mt-2 w-full rounded-lg"
+      />
     </div>
   );
 };

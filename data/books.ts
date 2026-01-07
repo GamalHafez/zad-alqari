@@ -15,6 +15,7 @@ export type Book = {
   category: BookCategory;
   cover: string;
   purposes: string[];
+  infographic: string;
 };
 
 export const books: Book[] = [
@@ -33,6 +34,7 @@ export const books: Book[] = [
       "تعزيز الوعي الثقافي الإسلامي الصحيح.",
       "تتبع مآلات الإنفصال عن الوحي تحت سلطة الثقافة الغالبة.",
     ],
+    infographic: "/images/infographics/1.png",
   },
   {
     id: "2",
@@ -49,6 +51,7 @@ export const books: Book[] = [
       "تصحيح المفاهيم الخاطئة في التعامل مع القرآن.",
       "التحفيز على قراءة القرآن بتدبر واستمرار.",
     ],
+    infographic: "/images/infographics/2.png",
   },
   {
     id: "3",
@@ -65,6 +68,7 @@ export const books: Book[] = [
       "تحصين الجيل من الشبهات الفكرية والانحرافات العقدية.",
       "تعزيز الانتماء العقدي بثقة ووعي.",
     ],
+    infographic: "/images/infographics/3.png",
   },
   {
     id: "4",
@@ -81,6 +85,7 @@ export const books: Book[] = [
       "ضبط السلوك الإيماني في التعامل مع الواقع.",
       "تحقيق التوازن بين العلم والعمل.",
     ],
+    infographic: "/images/infographics/4.png",
   },
   {
     id: "5",
@@ -97,6 +102,7 @@ export const books: Book[] = [
       "تقوية الصلة بالله من خلال الذكر الواعي.",
       "تهذيب النفس واستحضار مراقبة الله.",
     ],
+    infographic: "/images/infographics/5.png",
   },
   {
     id: "6",
@@ -113,5 +119,6 @@ export const books: Book[] = [
       "غرس القيم الإيمانية منذ الصغر.",
       "مساعدة الوالدين في التربية العقدية الصحيحة.",
     ],
+    infographic: "/images/infographics/6.png",
   },
 ];
