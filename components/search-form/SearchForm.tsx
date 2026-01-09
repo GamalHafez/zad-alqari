@@ -25,6 +25,7 @@ const SearchForm = ({
 
     const filteredBooks = findBooks(books, searched.trim());
     filteredBooks ? updateBooks(filteredBooks) : updateBooks([]);
+    event.currentTarget.reset();
   };
 
   return (
