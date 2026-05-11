@@ -1,5 +1,6 @@
 import BookNavigation from "@/components/book-navigation/BookNavigation";
 import BookPurposes from "@/components/book-purposes";
+import EmptyState from "@/components/empty-state";
 import { Badge } from "@/components/ui/badge";
 import { books } from "@/data/books";
 import Image from "next/image";
@@ -14,8 +15,8 @@ const Page = async ({ params }: PageProps) => {
   const { slug } = await params;
   const book = books.find((b) => b.slug === slug);
 
-  // TODO: Handle book not found
-  if (!book) return <div>الكتاب غير موجود</div>;
+
+  if (!book) return <EmptyState />;
 
   const { title, description, author, category, cover, purposes, infographic } =
     book;
